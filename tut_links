@@ -6,4 +6,15 @@ http://maxoffsky.com/code-blog/tutorial-creating-a-blog-in-laravel-from-scratch-
 http://maxoffsky.com/code-blog/tutorial-creating-a-blog-in-laravel-from-scratch-part-5-create-models-and-routes/
 http://maxoffsky.com/code-blog/tutorial-creating-a-blog-in-laravel-from-scratch-part-6-create-views/
 
-*//
+Dazz comments:
+
+write your routes into restful controllers
+[2:56:05 PM] Darren Nolan: then, after you've refactored to that, add in some resource controllers
+[2:56:27 PM] Darren Nolan: then, I want a new migration, that converts username, to email address, because 2014 - THE FUCK... usernames >_>
+[2:57:26 PM] Darren Nolan: which you'll need to update your auth config or it'll fail
+[2:57:32 PM] Darren Nolan: THEN I WANT SOME FORMS
+[2:57:34 PM] Darren Nolan: login forms
+[2:57:52 PM] Darren Nolan: play with redirects, redirectBack, withInput, withErrors
+
+
+*/

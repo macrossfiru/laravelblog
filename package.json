@@ -1,0 +1,20 @@
+{
+  "devDependencies": {
+    "bower": "*",
+    "grunt": "*",
+    "grunt-cli": "*",
+    "grunt-contrib-less": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-exec": "*",
+    "grunt-notify": "*",
+    "grunt-run": "*",
+  }
+  
+}
+
+/** 
+
+   Not sure what I'm doing with this file, Dazz said I needed it?!
+   
+*/

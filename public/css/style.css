@@ -1,0 +1,117 @@
+/*
+  Document: style
+*/
+
+html, body {
+  font-family: Helvetica,Arial,san-serif;
+  background: transparent;
+  padding: 0px;
+  margin: 0px;
+}
+
+
+#header_bg {
+  height: 100px;
+  background: #000 url("../img/header.jpg") no-repeat top center;
+}
+
+
+#bg_navbar, #bg_navbar .navbar-inner {
+  border-radius: 0px !important;
+  padding: 0px;
+}
+
+#bg_navpanel {
+  padding: 0px; 
+  margin-left: 0px;
+}
+
+#bg_sidebar {
+  margin-bottom: 20px;
+}
+
+
+
+.list-group-item {
+  border:1px solid #fff;
+  font-weight:bold;
+}
+
+a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.active:focus {
+  border-color: #fff;
+  border-width: 5px;
+  border-bottom: 0px;
+  border-top: 0px;
+  font-weight:bold;
+}
+
+p#bg_list-group-header {
+  /* padding: 3px 15px; */
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 20px;
+  color: #999999;
+}
+
+body {
+  background: url("../img/valiant_dark.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed !important:
+  background-position: top center;
+}
+
+.container .jumbotron{
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.jumbotron {
+  padding:10px;
+  padding-top:10px;
+}
+
+.jumbotron p {
+  font-size: 16px;
+}
+
+.jumbotron h3 {
+    font-weight:bold;
+    margin-bottom:0px;
+    line-height: 1.5em;
+}
+.jumbotron hr {
+    margin-bottom:10px;
+}
+
+hr {
+    height: 1px;
+    border:none;
+    background: #cccccc;
+    width:100%;
+    background: -webkit-gradient( 
+        linear, 
+        0 0, 
+        100% 0,  
+        from(rgba(50,50,50,0.01)),
+        to(rgba(80,80,80,0.01)), 
+        color-stop(.5,#c9c9c9)
+        );
+    background: -moz-linear-gradient(
+        left,
+        rgba(0,0,0,0.001) 0%,
+        rgba(201,201,201,1) 50%,
+        rgba(0,0,0,0.001) 100%
+        );
+
+    background:-ms-linear-gradient(left, hsla(0,0%,0%,0) 0%, hsla(0,0%,0%,.75) 50%, hsla(0,0%,0%,0) 100%);
+    background:-o-linear-gradient(left, hsla(0,0%,0%,0) 0%, hsla(0,0%,0%,.75) 50%, hsla(0,0%,0%,0) 100%);
+    background:linear-gradient(left, hsla(0,0%,0%,0) 0%, hsla(0,0%,0%,.75) 50%, hsla(0,0%,0%,0) 100%);
+
+    padding: 0px;
+    margin: 0px;
+    margin-top: 6px;
+}
+
+
+
+

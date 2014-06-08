@@ -14,8 +14,19 @@
 Route::get('/', function()
 {
 	//return View::make('hello');
-  $posts = Post:with('user')->order_by('updated_at', 'desc')->paginate('5');
+  $posts = Post::with('user')->orderBy('updated_at', 'desc')->paginate('5');
   return View::make('home')->with('posts', $posts);
+});
+
+Route::get('/alt', function()
+{
+	//return View::make('hello');
+  $posts = Post::with('user')->orderBy('updated_at', 'desc')->paginate('5');
+  return View::make('althome')->with('posts', $posts);
+});
+
+Route::get('/raw', function() {
+  return User::all();
 });
 
 
@@ -63,8 +74,8 @@ Route::get('login', function(){
 
 //Process the login request
 Route::post('login', function(){
-  $userinfo = array('username'=>Input:get('username'),
-                   'password'=>Input:get('password')
+  $userinfo = array('username'=>Input::get('username'),
+                   'password'=>Input::get('password')
                    );
   if(Auth::attempt($userinfo)) {
     return Redirect::to('admin');

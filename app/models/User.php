@@ -7,5 +7,8 @@ class User extends Eloquent {
     return $this->has_many('Post');
   }
   
+  public function setPasswordAttribute($password) {
+    $this->attributes['password']=Hash::make($password);
+  }
   
 }
