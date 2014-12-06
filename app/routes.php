@@ -18,13 +18,6 @@ Route::get('/', function()
   return View::make('home')->with('posts', $posts);
 });
 
-Route::get('/alt', function()
-{
-	//return View::make('hello');
-  $posts = Post::with('user')->orderBy('updated_at', 'desc')->paginate('5');
-  return View::make('althome')->with('posts', $posts);
-});
-
 Route::get('/raw', function() {
   return User::all();
 });
@@ -67,25 +60,30 @@ Route::post('admin', array('before'=>'auth','do'=>function(){
   return Redirect::to('/');
 }));
 
-//Present the login form
-Route::get('login', function(){
-  return View::make('login');
-});
+Route::controller('login', 'UserController');
+/**
+  //Present the login form
+  Route::get('login', function(){
+    return View::make('login');
+  });
 
-//Process the login request
-Route::post('login', function(){
-  $userinfo = array('username'=>Input::get('username'),
-                   'password'=>Input::get('password')
-                   );
-  if(Auth::attempt($userinfo)) {
-    return Redirect::to('admin');
-  } else {
-    return Redirect::to('login')->with('login_errors', true);
-  }
-});
+  //Process the login request
+  Route::post('login', function(){
+    $userinfo = array('username'=>Input::get('username'),
+                     'password'=>Input::get('password')
+                     );
+    if(Auth::attempt($userinfo)) {
+      return Redirect::to('admin');
+    } else {
+      return Redirect::to('login')->with('login_errors', true);
+    }
+  });
+*/
 
 //Process logout request
 Route::get('logout',function(){
   Auth::logout();
   return Redirect::to('/');
 });
+
+Route::resource('mojang', 'MojangController', [ 'only' => [ 0 => "show", 1 => "index"] ]);

@@ -5,6 +5,7 @@
 html, body {
   font-family: Helvetica,Arial,san-serif;
   background: transparent;
+  background-size: 100%;
   padding: 0px;
   margin: 0px;
 }
@@ -13,7 +14,9 @@ html, body {
 #header_bg {
   height: 100px;
   background: #000 url("../img/header.jpg") no-repeat top center;
+  background-size: cover;
 }
+
 
 
 #bg_navbar, #bg_navbar .navbar-inner {

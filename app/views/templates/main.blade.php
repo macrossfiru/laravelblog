@@ -14,6 +14,12 @@
     <link href="{{ URL::to('css/navbar.css') }}" rel='stylesheet' type='text/css'>
     <link href="{{ URL::to('css/style.css') }}" rel='stylesheet' type='text/css'>
     
+    <!-- Import jcubic-jquery.terminal -->
+    <link href="{{ URL::to('css/jquery.terminal.css') }}" rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="{{ URL::to('js/jquery.terminal-0.8.7.js') }}"></script>
+    <script type="text/javascript" src="{{ URL::to('js/jquery.mousewheel-min.js') }}"></script>
+    <script type="text/javascript" src="{{ URL::to('js/quaketerm.js') }}"></script>
+    <script type="text/javascript" src="{{ URL::to('js/jsterminal-cmdlets.js') }}"></script>
    
   </head>
   

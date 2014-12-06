@@ -7,18 +7,18 @@
 @endif
 
 @foreach($posts as $post)
-<div class="panel panel-default">
-  <div class="panel-heading"><h2 class="panel-title">{{ $post->post_title }}</h2></div>
-  <div class="panel-body">
+<div class="jumbotron">
+  <h3>{{ $post->post_title }}</h3>
+  <hr>
   <p>{{ $post->post_body }}</p>
-  <span class="badge badge-success">Posted {{$post->updated_at}}</span>
+  <span class="badge badge-success"> Posted {{$post->updated_at}}</span>
   @if(!Auth::guest())
   {{FORM::open('post/'.$post->id, 'DELETE')}}
   <p>{{FORM::submit('Delete', array('class'=>'btn-small'))}}</p>
   {{FORM::close()}}
   @endif
-  </div>
 </div>
+
 
 @endforeach
 @endsection
@@ -28,3 +28,4 @@
    {{ $posts->links(); }}
 </div>
 @endsection
+
